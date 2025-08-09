@@ -1,8 +1,5 @@
-```mermaid
-
 sequenceDiagram
-    participant browser
-    participant server
+participant browser
+participant server
 
-    browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa contains the new note as JSON data
-```
+    browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa with the new note sent as JSON
