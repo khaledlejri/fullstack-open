@@ -1,0 +1,55 @@
+const express = require("express")
+const app = express()
+const PORT = 3001
+
+const requestTime = (request, response, next) => {
+    request.requestTime = new Date()
+    console.log(`Path: ${request.path}, Timestamp: ${request.requestTime}`)
+
+    next()
+}
+
+// Middleware
+app.use(express.json())
+app.use(requestTime)
+
+let persons = [
+    {
+        "id": "1",
+        "name": "Arto Hellas",
+        "number": "040-123456"
+    },
+    {
+        "id": "2",
+        "name": "Ada Lovelace",
+        "number": "39-44-5323523"
+    },
+    {
+        "id": "3",
+        "name": "Dan Abramov",
+        "number": "12-43-234345"
+    },
+    {
+        "id": "4",
+        "name": "Mary Poppendieck",
+        "number": "39-23-6423122"
+    }
+]
+
+// Endpoints
+app.get('/', (request, response) => {
+    response.send("The server is working")
+})
+
+app.get('/api/persons', (request, response) => {
+    response.json(persons)
+})
+
+app.get('/info', (request, response) => {
+    const infoPage = `<p>Phonebook has info for ${persons.length} people</p><p>${request.requestTime}</p>`
+    response.send(infoPage)
+})
+
+
+app.listen(PORT)
+console.log(`Server listening on port ${PORT}`)

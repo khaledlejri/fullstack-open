@@ -1,0 +1,21 @@
+/* Add to your index.css or main CSS file */
+
+.notification {
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.notification.success {
+  color: green;
+  background: lightgreen;
+  border-color: green;
+}
+
+.notification.error {
+  color: red;
+  background: lightgrey;
+  border-color: red;
+}
