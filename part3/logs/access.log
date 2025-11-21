@@ -1,0 +1,11 @@
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:10 +0000] "GET /api/persons HTTP/1.1" 200 231
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:17 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:28 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:28 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:28 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:28 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:52:40 +0000] "POST /api/persons HTTP/1.1" 201 50
+::ffff:127.0.0.1 - - [25/Oct/2025:19:53:04 +0000] "POST /api/persons HTTP/1.1" 400 31
+::ffff:127.0.0.1 - - [25/Oct/2025:19:53:36 +0000] "GET /api/persons HTTP/1.1" 200 282
+::ffff:127.0.0.1 - - [25/Oct/2025:19:58:12 +0000] "GET /api/persons HTTP/1.1" 200 231
+::ffff:127.0.0.1 - - [25/Oct/2025:19:59:11 +0000] "POST /api/persons HTTP/1.1" 201 50
